@@ -1,31 +1,18 @@
-const changeText = function () {
-    document.querySelector(".title").innerHTML = "제목아니다"
-}
-
-document.querySelector(".btn").addEventListener("click", changeText);
-
-
-    
-    
-const sum = function () {
-    let anwser = 0;
-    num1= 1;
-    num2= 3;
-    anwser = num1+num2;
-    console.log(anwser)
-}
-sum();
-
-const isEvenOrOdd = function(num) {
-    num = 4
-    if (num % 2 == 0) {
-        alert("짝수입니다.")
-    }else {
-        alert("홀수입니다.")
+document.getElementById("container").addEventListener("click", function (event) {
+    if(event.target === document.querySelector(".box")) {
+       document.querySelector(".box").classList.add("clicked");
     }
-} 
-isEvenOrOdd();
+    
+    
+})
 
-const profile = {이름: "병수", 나이: 20}
 
-console.log(profile);
+function getSquare(number) {
+    // number의 제곱을 계산하여 반환하는 함수를 작성하세요.
+    let answer = 0;
+    answer = number*number;
+    return answer
+  }; 
+
+const result = getSquare(5);
+console.log(result); // 25 출력 (5의 제곱)
