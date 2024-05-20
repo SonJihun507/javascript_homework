@@ -66,6 +66,6 @@ const user = {
 
 const {이름, 나이, 주소 } = user;
 
-console.log(이름) // "시골"
-console.log(나이) // "시골"
+console.log(이름) // "병수"
+console.log(나이) // "20"
 console.log(주소) // "시골"
